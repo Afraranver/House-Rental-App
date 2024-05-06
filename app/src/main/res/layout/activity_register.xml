@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".RegisterActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="50dp"
+                    android:fontFamily="@font/alfa_slab_one"
+                    android:text="Register"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="30sp" />
+
+                <EditText
+                    android:id="@+id/edtUserName"
+                    android:layout_width="300dp"
+                    android:layout_height="45dp"
+                    android:layout_below="@+id/textView"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30dp"
+                    android:background="#FFFFFF"
+                    android:ems="10"
+                    android:hint="Username"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="5dp" />
+
+                <EditText
+                    android:id="@+id/edtEmail"
+                    android:layout_width="300dp"
+                    android:layout_height="45dp"
+                    android:layout_below="@+id/edtUserName"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30dp"
+                    android:background="#FFFFFF"
+                    android:ems="10"
+                    android:hint="Email"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="5dp" />
+
+                <EditText
+                    android:id="@+id/edtPassword"
+                    android:layout_width="300dp"
+                    android:layout_height="45dp"
+                    android:layout_below="@+id/edtEmail"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30dp"
+                    android:background="#FFFFFF"
+                    android:ems="10"
+                    android:hint="Password"
+                    android:inputType="textPersonName|textPassword"
+                    android:paddingLeft="5dp" />
+
+                <EditText
+                    android:id="@+id/edtConfirmPassword"
+                    android:layout_width="300dp"
+                    android:layout_height="45dp"
+                    android:layout_below="@+id/edtPassword"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30dp"
+                    android:background="#FFFFFF"
+                    android:ems="10"
+                    android:hint="Confirm Password"
+                    android:inputType="textPersonName|textPassword"
+                    android:paddingLeft="5dp" />
+
+                <LinearLayout
+                    android:id="@+id/linearlayout"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/edtConfirmPassword"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btnSeller"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/round_corners_green"
+                        android:gravity="center"
+                        android:text="Seller"
+                        android:textColor="#FFFFFF" />
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <Button
+                        android:id="@+id/btnBuyer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/round_corners_green"
+                        android:gravity="center"
+                        android:text="Buyer"
+                        android:textColor="#FFFFFF" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnRegister"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/linearlayout"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/round_corners"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:text="Register"
+                    android:textColor="#FFFFFF" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:paddingLeft="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="8dp">
+
+    <RelativeLayout
+        android:id="@+id/relativelayout_post"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/imgPost"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/no_pictures" />
+
+        <TextView
+            android:id="@+id/txtName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgPost"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-black"
+            android:text="Name"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/txtPostName"
+            android:layout_width="128dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtName"
+            android:layout_alignStart="@+id/txtName"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/round_corners_white"
+            android:gravity="center_vertical"
+            android:hint="Post Name"
+            android:minHeight="30dp"
+            android:paddingLeft="8dp" />
+
+        <TextView
+            android:id="@+id/txtLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgPost"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/txtPrice"
+            android:fontFamily="sans-serif-black"
+            android:text="Location"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/txtPostLocation"
+            android:layout_width="128dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtLocation"
+            android:layout_alignStart="@+id/txtContact"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/round_corners_white"
+            android:gravity="center_vertical"
+            android:hint="Location"
+            android:minHeight="30dp"
+            android:paddingLeft="8dp" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtPostName"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-black"
+            android:text="Description"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/txtPostDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView6"
+            android:layout_alignStart="@+id/textView6"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/round_corners_white"
+            android:gravity="center_vertical"
+            android:hint="Descriptions"
+            android:minHeight="50dp"
+            android:paddingLeft="8dp" />
+
+        <TextView
+            android:id="@+id/txtPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtPostDescription"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-black"
+            android:text="Price"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/txtPostPrice"
+            android:layout_width="128dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtPrice"
+            android:layout_alignStart="@+id/textView6"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/round_corners_white"
+            android:gravity="center_vertical"
+            android:hint="Price"
+            android:minHeight="30dp"
+            android:paddingLeft="8dp" />
+
+        <TextView
+            android:id="@+id/txtContact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtPostDescription"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/txtPrice"
+            android:fontFamily="sans-serif-black"
+            android:text="Contact"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/txtPostContact"
+            android:layout_width="128dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtContact"
+            android:layout_alignStart="@+id/txtContact"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/round_corners_white"
+            android:gravity="center_vertical"
+            android:hint="Contact"
+            android:minHeight="30dp"
+            android:paddingLeft="8dp" />
+
+        <TextView
+            android:id="@+id/txtAvailable"
+            android:layout_width="128dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtPostContact"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/round_corners_light_green"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center_vertical|center"
+            android:hint="Available"
+            android:minHeight="30dp"
+            android:paddingLeft="8dp"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:id="@+id/linearAdminOptions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtAvailable"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnDelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/round_corners_red"
+                android:fontFamily="monospace"
+                android:text="Delete"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btnEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/round_corners_green"
+                android:fontFamily="monospace"
+                android:text="Edit"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

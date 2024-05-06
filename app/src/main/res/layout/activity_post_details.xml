@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/postdetailsbg"
+    tools:context=".PostDetails">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/txtName2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/carouselView"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="sans-serif-black"
+                    android:text="Name"
+                    android:textColor="#000000"
+                    tools:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/edtPostName"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtName2"
+                    android:layout_alignStart="@+id/textView6"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/round_corners_white"
+                    android:gravity="center_vertical"
+                    android:hint="Name"
+                    android:minHeight="35dp"
+                    android:paddingLeft="8dp"
+                    tools:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/edtPostName"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="sans-serif-black"
+                    android:text="Description"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/edtPostDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView13"
+                    android:layout_alignStart="@+id/textView13"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/round_corners_white"
+                    android:gravity="center_vertical"
+                    android:hint="Descriptions"
+                    android:minHeight="50dp"
+                    android:paddingLeft="8dp" />
+
+                <TextView
+                    android:id="@+id/txtPrice2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/edtPostDescription"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="sans-serif-black"
+                    android:text="Price"
+                    android:textColor="#000000"
+                    tools:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/edtPostPrice"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtPrice2"
+                    android:layout_alignStart="@+id/textView6"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/round_corners_white"
+                    android:gravity="center_vertical"
+                    android:hint="Price"
+                    android:minHeight="35dp"
+                    android:paddingLeft="8dp"
+                    tools:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/txtContact2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/edtPostPrice"
+                    android:layout_alignStart="@+id/edtPostPrice"
+                    android:layout_marginTop="20dp"
+                    android:layout_toEndOf="@+id/txtPrice"
+                    android:fontFamily="sans-serif-black"
+                    android:text="Contact"
+                    android:textColor="#000000"
+                    tools:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/edtPostContact"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtContact2"
+                    android:layout_alignStart="@+id/txtContact2"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/round_corners_white"
+                    android:gravity="center_vertical"
+                    android:hint="Contact"
+                    android:minHeight="35dp"
+                    android:paddingLeft="8dp"
+                    android:textColor="#2196F3"
+                    tools:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/txtLocation2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/edtPostContact"
+                    android:layout_alignStart="@+id/edtPostPrice"
+                    android:layout_marginTop="20dp"
+                    android:layout_toEndOf="@+id/txtPrice"
+                    android:fontFamily="sans-serif-black"
+                    android:text="Location"
+                    android:textColor="#000000"
+                    tools:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/edtPostLocation"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtLocation2"
+                    android:layout_alignStart="@+id/txtContact2"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/round_corners_white"
+                    android:gravity="center_vertical"
+                    android:hint="Location"
+                    android:minHeight="35dp"
+                    android:paddingLeft="8dp"
+                    tools:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/txtavailability2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/edtPostLocation"
+                    android:layout_alignStart="@+id/edtPostLocation"
+                    android:layout_marginTop="20dp"
+                    android:layout_toEndOf="@+id/txtPrice"
+                    android:fontFamily="sans-serif-black"
+                    android:text="Availability"
+                    android:textColor="#000000"
+                    tools:visibility="visible" />
+
+                <Spinner
+                    android:id="@+id/idAvailabilitySpinner"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtavailability2"
+                    android:layout_alignStart="@+id/txtavailability2"
+                    android:layout_centerVertical="true"
+
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/round_corners_white"
+                    android:minHeight="35dp"
+                    android:padding="10dp" />
+
+                <Button
+                    android:id="@+id/btnUpdate"
+                    android:layout_width="349dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/idAvailabilitySpinner"
+                    android:layout_alignStart="@+id/txtContact2"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/round_corners"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Update"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold" />
+
+                <com.synnapps.carouselview.CarouselView
+                    android:id="@+id/carouselView"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="#FFFFFF"
+                    app:fillColor="#FFFFFFFF"
+                    app:pageColor="#00000000"
+                    app:radius="6dp"
+                    app:slideInterval="3000"
+                    app:strokeColor="#FF777777"
+                    app:strokeWidth="1dp">
+
+                </com.synnapps.carouselview.CarouselView>
+
+                <ImageView
+                    android:id="@+id/imgBack"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/previous" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
